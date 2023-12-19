@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,200&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="business.css">
+    <link rel="shortcut icon" type="x-icon" href="image/logo.jpg">
+    <title>AVIATION</title>
+</head>
+<body class="index-page">
+    <section class="sub-header">
+        <nav>
+            <a href="homepage.html"><img src="image/logo.jpg"></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()" aria-hidden="true"></i>
+                <ul>
+                    <li><a href="homepage.html">HOME</a></li>
+                    <li><a href="">SERVICES</a></li>
+                    <li><a href="services.html">PRODUCTS</a></li>
+                    <li><a href="">ABOUT US</a></li>
+                    <li><a href="">CONTACT</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()" aria-hidden="true"></i>
+        </nav>
+
+        <h1>About Us</h1>
+    </section>
+
+    <!-- -------about us content ------------- -->
+
+    <section class="about-us">
+
+        <div class="row">
+            <div class="about-col">
+                <h1>We offer you safe flight and fun journey.</h1>
+                <p>Soar to new heights with FLY NOW CRASH LATER!
+                    We're a passionate team of aviators dedicated to making your journey seamless and unforgettable.
+                    From luxurious first-class cabins to family-friendly amenities, we cater to every traveler's needs.
+                    Our modern fleet boasts the latest in comfort and technology, while our experienced pilots ensure a smooth and safe flight.
+                    Whether you're jetting off for business or pleasure, we're committed to exceeding your expectations and making your trip truly special.
+                    Book your flight today and experience the difference that FLY NOW CRASH LATER can make!</p>
+                    <a href="" class="hero-btn red-btn">BOOK NOW</a>
+            </div>
+            <div class="about-col">
+                <img src="image/parking.jpg">
+            </div>
+        </div>
+    </section>
+
+
+<!-- ---call--- -->
+
+<section class="cta">
+    <h1>Book To Us Anytime and <br>Anywhere all around the world.</h1>
+    <a href=" " class="hero-btn">CONTACT US</a>
+    <div class="social-link">
+        <a href="" target="_blank"><i class="fa fa-facebook"></i></a></i>
+        <a href="" target="_blank"><i class="fa fa-instagram"></i></a></i>
+        <a href="" target="_blank"><i class="fa fa-twitter"></i></a></i>
+        <a href="" target="_blank"><i class="fa fa-youtube-play"></i></a></i>
+        <a href="" target="_blank"><i class="fa fa-telegram" aria-hidden="true"></i></a></i>
+        
+    </div>
+</section>
+
+
+
+
+    
+    
+<!-- javascrip -->
+    <script>
+
+        var navLinks = document.getElementById("navLinks");
+        function showMenu() {
+            navLinks.style.right = "0";
+        }
+        function hideMenu() {
+            navLinks.style.right = "-200px";
+        }
+
+
+    </script>
+
+
+
+</body>
+</html>

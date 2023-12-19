@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="services.css">
+    <link rel="shortcut icon" type="x-icon" href="image/logo.jpg">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://kit.fontawesome.com/92d70a2fd8.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="header">
+        <p class="logo">AVIATION</p>
+        <div class="cart"><i class="fa-solid fa-cart-shopping"></i><p id="count">0</p></div>
+    </div>
+    <div class="container">
+        <div id="root"></div>
+        <div class="sidebar">
+            <div class="head"><p>My Cart</p></div>
+            <div id="cartItem">Your cart is empty</div>
+            <div class="foot">
+                <div class="total-section">
+                    <h3>Total</h3>
+                    <h2 id="total"> ₱0.00</h2>
+                </div>
+                <button onclick="checkout()">Checkout</button>
+            </div>
+        </div>
+    </div>
+
+    <nav>
+        <a href="homepage.html"><img src="image/logo.jpg"></a>
+        <div class="nav-links" id="navLinks">
+            <i class="fa fa-times" onclick="hideMenu()" aria-hidden="true"></i>
+            <ul>
+                <li><a href="homepage.html">HOME</a></li>
+                <li><a href="">SERVICES</a></li>
+                <li><a href="">PRODUCTS</a></li>
+                <li><a href="aboutus.html">ABOUT US</a></li>
+                <li><a href="">CONTACT</a></li>
+            </ul>
+        </div>
+        <i class="fa fa-bars" onclick="showMenu()" aria-hidden="true"></i>
+    </nav>
+    <div id="paymentModal" class="modal">
+    <div class="modal-content">
+        <span class="close" onclick="closePaymentModal()">&times;</span>
+        <h2>Select Payment Option</h2>
+        <div class="payment-options">
+            <img src="image/gcash.jpeg" alt="GCash" onclick="makePayment('GCash')">
+            <img src="image/paypal.png" alt="PayPal" onclick="makePayment('PayPal')">
+            <img src="image/card.png" alt="Credit Card" onclick="makePayment('Credit Card')">
+        </div>
+    </div>
+</div>
+
+
+
+    <script src="services.js"></script>
+</body>
+</html>
